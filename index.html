@@ -3,16 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vendo Listas</title>
+    <title>IMC</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="pagina1.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Products</a></li>
-        </ul>
-    </nav>
+    <section id="container">
+        <form action="/" method="POST" id="form">
+            <h1>Calcule seu IMC</h1>
+            <label for="peso">Peso</label>
+            <input type="text" id="peso" name="peso" placeholder="Informe seu peso (kg)">
+            <label for="altura">Altura</label>
+            <input type="text" id="altura" name="altura" placeholder="Informe sua altura (cm)">
+            <button type="submit">Enviar</button>
+            
+            <div id="resultado"></div>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
